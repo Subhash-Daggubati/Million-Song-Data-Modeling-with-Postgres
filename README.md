@@ -9,16 +9,16 @@ In this project, We will create a Postgres database and build an ETL pipeline us
 ## Data Model
 ### Fact Table
 1. **songplays** - records in log data associated with song plays i.e. records with page NextSong
-       * songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+   - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 ### Dimension Tables
 2. **users** - users in the app
-       * user_id, first_name, last_name, gender, level
+   - user_id, first_name, last_name, gender, level
 3. **songs** - songs in music database
-       * song_id, title, artist_id, year, duration
+   - song_id, title, artist_id, year, duration
 4. **artists** - artists in music database
-       * artist_id, name, location, latitude, longitude
+   - artist_id, name, location, latitude, longitude
 5. **time** - timestamps of records in songplays broken down into specific units
-       * start_time, hour, day, week, month, year, weekday
+   - start_time, hour, day, week, month, year, weekday
 
 ## Key Project Files
 This project has three important python files.
@@ -27,5 +27,5 @@ This project has three important python files.
 3. etl.py - Python code required to perform the ETL process and load the data in JSON files to Sparkify database.
 
 ## Steps to Run the Project
-**Step 1:** Run the file create_tables.py. This file will create the database and tables required for this data model. 
-**Step 2:** Run the file etl.py. This file will read the data from all the JSON files and load the data into database.
+* **Step 1:** Run the file create_tables.py. This file will create the database and tables required for this data model.
+* **Step 2:** Run the file etl.py. This file will read the data from all the JSON files and load the data into database.
